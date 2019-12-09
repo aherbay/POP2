@@ -1,6 +1,6 @@
 # compute difference effect
 
-pop2_B10_semMM_cons <- subset(pop2_B10, MM_RAW %in% c(“consistent”, “semMM_RAW”)
+pop2_B10_semMM_cons <- subset(pop2_B10, MM_RAW %in% c(“consistent”, “semMM_RAW”))
 
 pop2_B10_semMM_cons$TW <- ifelse(pop2_B10_semMM_cons$Time>200 & pop2_B10_semMM_cons$Time <400,"250-400" ,ifelse(pop2_B10_semMM_cons$Time>400 & pop2_B10_semMM_cons$Time <600,"400-600" ,ifelse(pop2_B10_semMM_cons$Time>600 & pop2_B10_semMM_cons$Time <750,"600-750" ,ifelse(pop2_B10_semMM_cons$Time>750 & pop2_B10_semMM_cons$Time <850,"750-850",NA ) ) ) )
 
